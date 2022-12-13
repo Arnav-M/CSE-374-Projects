@@ -1,0 +1,12 @@
+# Arnav Mathur
+# CSE 374 22sp HW 3
+# Part 4
+# 4/20/2022
+
+Q1: They first set the X and Y coordinates of the scatterplot then a range of values 
+for the X axis is set, then the output file is designated and lastly the graph is plotted using 
+results.txt.
+
+Q2: The size of the website does not correlate to the rank of the website. It is mostly randomized and
+this was predictable as most websites have small index pages for a cleaner feel, so some websites like 
+Amazon could have a very small index page but other larger pages.
