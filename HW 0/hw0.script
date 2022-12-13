@@ -1,0 +1,21 @@
+Script started on 2022-03-28 19:25:23-07:00
+[arnavm90@cancun ~]$ whoami
+arnavm90
+[arnavm90@cancun ~]$ echo %[K$SHELL
+/bin/bash
+[arnavm90@cancun ~]$ pwd
+/data/netid/arnavm90
+[arnavm90@cancun ~]$ uname -a
+Linux cancun.cs.washington.edu 4.18.0-348.2.1.el8_5.x86_64 #1 SMP Mon Nov 15 20:49:28 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+[arnavm90@cancun ~]$ cat /etc/rocky-release
+Rocky Linux release 8.5 (Green Obsidian)
+[arnavm90@cancun ~]$ gcc --version -std=c17
+gcc (GCC) 9.2.1 20191120 (Red Hat 9.2.1-2)
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[arnavm90@cancun ~]$ exit
+exit
+
+Script done on 2022-03-28 19:26:32-07:00
