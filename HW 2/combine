@@ -1,0 +1,23 @@
+#!/usr/bin/bash
+# Arnav Mathur
+# CSE 374 22sp HW 2
+# Part 3
+# 4/12/2022
+
+# Prints error if less than two arguments are provided.
+if [ $# -lt 2 ]; then
+    echo "Error 404: this function requires two or more arguments to be passed" >&2
+    exit 1
+fi 
+
+# Prints error if file or directory f1 already exists.
+if [ -e "$1" ]; then
+    echo "Error: first file exists" >&2
+    exit 1
+fi
+
+STDOUT="$1"
+shift
+cat "$@" 2>"$STDOUT"
+
+exit 0

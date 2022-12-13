@@ -1,0 +1,6 @@
+# Arnav Mathur
+# CSE 374 22sp HW 2
+# Part 2
+# 4/12/2022
+
+alias private="chmod -R g=u,o-rwx"

@@ -1,0 +1,20 @@
+Arnav Mathur 
+CSE 374 Homework 2, Q1
+
+For echo command: 
+echo tweet - prints tweet to the command line
+
+For cat command:
+echo tweet > tweet - stores 'tweet' into a new file called tweet 
+cat tweet - cat prints the string inside the tweet file
+
+For ls command:
+ls tweet - lists the file called tweet in the directory
+
+For grep command:
+grep 'tweet' tweet - finds the string 'tweet' in the tweet file
+
+For the !! command:
+alias tweet= "" - creates an empty alias
+tweet - does nothing
+!! - takes in the previous command and runs it and since tweet is empty it prints out tweet
