@@ -1,0 +1,61 @@
+Script started on 2022-04-29 18:46:33-07:00
+[arnavm90@cancun HW4]$ gdb ./gasp
+[35;1mGNU gdb (GDB) Red Hat Enterprise Linux 8.3-1.el8
+[mCopyright (C) 2019 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32m./gasp[m...
+(gdb) break gasp.c:23
+Breakpoint 1 at [34m0x4011a5[m: file [32mgasp.c[m, line 25.
+(gdb) break gasp.c:45
+Breakpoint 2 at [34m0x401243[m: file [32mgasp.c[m, line 45.
+(gdb) run yes Boi
+Starting program: /data/netid/arnavm90/HW4/gasp yes Boi
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.28-164.el8_5.3.x86_64
+
+Breakpoint 1, [33mmain[m ([36margc[m=3, [36margv[m=0x7fffffffcea8) at [32mgasp.c[m:25
+25	  [01;34mif[m [31m([margc [31m<[m [35m3[m[31m)[m [31m{[m
+(gdb) print argv[1]
+$1 = [34m0x7fffffffd225[m "yes"
+(gdb) continue
+Continuing.
+
+Breakpoint 2, [33mprocess_file[m ([36mfileIndex[m=2, [36margv[m=0x7fffffffcea8) at [32mgasp.c[m:45
+45	  [01;34mif[m [31m([mfile [31m==[m NULL[31m)[m [31m{[m
+(gdb) bt
+#0  [33mprocess_file[m ([36mfileIndex[m=2, [36margv[m=0x7fffffffcea8) at [32mgasp.c[m:45
+#1  [34m0x00000000004011ea[m in [33mmain[m ([36margc[m=3, [36margv[m=0x7fffffffcea8) at [32mgasp.c[m:31
+(gdb) list
+40	[36m   if such a line exists it prints the line on the terminal.[m
+41	[36m   Is case-sensitive.[m
+42	[36m*/[m
+43	[32mint[m [01;30mprocess_file[m[31m([m[32mint[m fileIndex[31m,[m [32mchar[m [31m*[margv[31m[])[m [31m{[m
+44	  FILE [31m*[mfile [31m=[m [01;30mfopen[m[31m([margv[31m[[mfileIndex[31m],[m [31m"r"[m[31m);[m [36m// pointer to file[m
+45	  [01;34mif[m [31m([mfile [31m==[m NULL[31m)[m [31m{[m
+46	    [01;30mfprintf[m[31m([mstderr[31m,[m [31m"%s - File does not exist.[m[35m\n[m[31m"[m[31m,[m argv[31m[[mfileIndex[31m]);[m
+47	    [01;34mreturn[m [31m-[m[35m1[m[31m;[m
+48	  [31m}[m [01;34melse[m [31m{[m
+49	    [32mchar[m line[31m[[mMAX_LINES[31m];[m [36m// stores all the lines in the file[m
+(gdb) print argv[2]
+$2 = [34m0x7fffffffd229[m "Boi"
+(gdb) print file
+$3 = (FILE *) [34m0x4052a0[m
+(gdb) continue
+Continuing.
+[Inferior 1 (process 2886003) exited normally]
+(gdb) quit
+[arnavm90@cancun HW4]$ exit
+exit
+
+Script done on 2022-04-29 18:47:33-07:00
