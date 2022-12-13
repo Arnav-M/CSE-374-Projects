@@ -1,0 +1,60 @@
+Script started on 2022-04-05 18:50:25-07:00
+[arnavm90@cancun ~]$ echo Hello world
+Hello world
+[arnavm90@cancun ~]$ date
+Tue Apr  5 18:50:34 PDT 2022
+[arnavm90@cancun ~]$ cal
+     April 2022     
+Su Mo Tu We Th Fr Sa
+                1  2
+ 3  4 [7m 5[27m  6  7  8  9
+10 11 12 13 14 15 16
+17 18 19 20 21 22 23
+24 25 26 27 28 29 30
+                    
+[arnavm90@cancun ~]$ pwd
+/data/netid/arnavm90
+[arnavm90@cancun ~]$ cd ~
+[arnavm90@cancun ~]$ ls
+hw0.script  hw1.part1
+[arnavm90@cancun ~]$ mkdir temp
+[arnavm90@cancun ~]$ mv temp files
+[arnavm90@cancun ~]$ cd files
+[arnavm90@cancun files]$ date > now
+[arnavm90@cancun files]$ cp now before
+[arnavm90@cancun files]$ echo "xyzzy" > secret
+[arnavm90@cancun files]$ ls -l
+total 12
+-rw-r--r-- 1 arnavm90 netid 29 Apr  5 18:51 before
+-rw-r--r-- 1 arnavm90 netid 29 Apr  5 18:51 now
+-rw-r--r-- 1 arnavm90 netid  6 Apr  5 18:51 secret
+[arnavm90@cancun files]$ mv secret magic
+[arnavm90@cancun files]$ cd ..
+[arnavm90@cancun ~]$ rm -r files
+[arnavm90@cancun ~]$ echo "It's a secret!" > secretfile
+[arnavm90@cancun ~]$ ls[K[Kchmod -w secretfile
+[arnavm90@cancun ~]$ ls -l
+total 8
+-rw-r--r-- 1 arnavm90 netid 796 Mar 28 19:26 hw0.script
+-rw-r--r-- 1 arnavm90 netid   0 Apr  5 18:50 hw1.part1
+-r--r--r-- 1 arnavm90 netid  15 Apr  5 18:52 secretfile
+[arnavm90@cancun ~]$ cat "words" >> secretfile
+bash: secretfile: Permission denied
+[arnavm90@cancun ~]$ chmod -r secretfile
+[arnavm90@cancun ~]$ ls -l
+total 8
+-rw-r--r-- 1 arnavm90 netid 796 Mar 28 19:26 hw0.script
+-rw-r--r-- 1 arnavm90 netid   0 Apr  5 18:50 hw1.part1
+---------- 1 arnavm90 netid  15 Apr  5 18:52 secretfile
+[arnavm90@cancun ~]$ cat secretfile
+cat: secretfile: Permission denied
+[arnavm90@cancun ~]$ hostname
+cancun.cs.washington.edu
+[arnavm90@cancun ~]$ ps r
+    PID TTY      STAT   TIME COMMAND
+4097481 pts/4    R+     0:00 ps r
+[arnavm90@cancun ~]$ grep "arnavm90" /etc/passwd
+[arnavm90@cancun ~]$ exit
+exit
+
+Script done on 2022-04-05 18:53:53-07:00

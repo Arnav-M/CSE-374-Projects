@@ -1,0 +1,19 @@
+1. Wc counts the number of lines, words and bytes in the file specified. wc -l only counts the number of lines specifically.
+
+2.  3548 7381 223856 /etc/passwd
+
+3. Exit.
+
+4. It shows the home directory which for me was /data/netid/arnavm90
+
+5. USER and PWD are two others that are important. USER stores the name of the user accessing the shell and PWD stores the current working directory.
+
+6. The find command.
+
+7. Which command cannot search in other paths apart from the current path it is used in and has less criteria for searching.
+
+8. The first command adds the words "Hello World!" to a file whereas the second only prints the words to the console.
+
+9. It replaces the words "Hello World!" with "more text".
+
+10. This command adds the text "yet more text" to the file after the word "more text".
